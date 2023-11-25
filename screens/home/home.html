@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="home.css" />
+</head>
+
+<body>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet" />
+    <header>
+        <div class="logo">
+            <p id="corner">ZSH Bank</p>
+            <p id="cornerLeft">Welcome, Berzy</p>
+        </div>
+    </header>
+
+    <div class="parent">
+        <div class="text-container">
+            <h2 id="whatDoYouWantToDO">What do you want to do today?</h2>
+            <h1 id="USD">Balance: $6300.20</h1>
+        </div>
+        <section class="main">
+
+            <div class="arrow-button-container">
+                <a href="/screens/account-info/account-info.html" style="text-decoration: none;">
+                    <div class="arrow-div">
+                        <img src="/assets/basil_arrow_withdraw.svg" alt="arrow" />
+                        <button class="design-button delete-number">Account Information</button>
+                    </div>
+                </a>
+
+
+                <div class="arrow-div">
+                    <img src="/assets/basil_arrow_withdraw.svg" alt="arrow" />
+                    <button class="design-button currency-converter">
+                        Print Mini Statement
+                    </button>
+                </div>
+
+                <a href="/screens/customization/customization.html" style="text-decoration: none;">
+                    <div class="arrow-div">
+                        <img src="/assets/basil_arrow_withdraw.svg" alt="arrow" />
+                        <button class="design-button return">Return</button>
+                    </div>
+                </a>
+                <div class="arrow-div">
+                    <img src="/assets/arrow-transparent.svg" alt="arrow" />
+                    <button style="color: transparent;" class="design-button-transparent"></button>
+
+                </div>
+
+            </div>
+            <div class="arrow-button-container">
+                <a href="/screens/withdraw/withdraw.html" style="text-decoration: none;">
+                    <div class="arrow-div right">
+                        <button class="design-button delete-number">Winthdraw in USD</button>
+                        <img style="transform: scaleX(-1);" src="/assets/basil_arrow_withdraw.svg" alt="arrow" />
+                    </div>
+                </a>
+                <a href="/screens/withdraw/withdraw.html" style="text-decoration: none;">
+                    <div class="arrow-div right">
+                        <button class="design-button delete-all">Withdraw in IQD</button>
+                        <img style="transform: scaleX(-1);" src="/assets/basil_arrow_withdraw.svg" alt="arrow" />
+
+                    </div>
+                </a>
+
+                <a href="/screens/fast-cash/fast-cash.html" style="text-decoration: none;">
+                    <div class="arrow-div right">
+                        <button class="design-button currency-converter"> Fast Cash in USD </button>
+                        <img style="transform: scaleX(-1);" src="/assets/basil_arrow_withdraw.svg" alt="arrow" />
+                    </div>
+                </a>
+
+                <a href="/screens/fast-cash/fast-cash.html" style="text-decoration: none;">
+                    <div class="arrow-div">
+                        <button class="design-button return">Fast Cash in IQD</button>
+                        <img style="transform: scaleX(-1);" src="/assets/basil_arrow_withdraw.svg" alt="arrow" />
+                    </div>
+                </a>
+            </div>
+
+        </section>
+    </div>
+
+</body>
+
+</html>

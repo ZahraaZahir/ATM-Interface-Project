@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+
+<head>
+  <link href="customization.css" rel="stylesheet" type="text/css">
+  <link href="<link rel=" preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <p id="corner">ZSH Bank</p>
+    </div>
+  </header>
+
+  <div class="text-container">
+    <h2 id="whatDoYouWantToDO">Choose your prefered settings</h2>
+  </div>
+
+  <div>
+    <p class="p3">
+      Select a language to continue
+    </p>
+  </div>
+
+  <div class="text-size-button">
+    <p class="p2">
+      Adjust text size
+    </p>
+  </div>
+  <section class="main">
+
+    <div class="arrow-button-container">
+      <div class="arrow-div">
+        <img src="/assets/basil_arrow_withdraw.svg" alt="arrow" />
+        <button class="design-button delete-number" onclick="adjustTextSize(1)"> Increase Text size &#43;
+          &#x2B;</button>
+      </div>
+      </a>
+
+      <div class="arrow-div">
+        <img src="/assets/basil_arrow_withdraw.svg" alt="arrow" />
+        <button class="design-button currency-converter" onclick="adjustTextSize(-1)">
+          Decrease Text size &#8722; &#x2212; </button>
+      </div>
+
+
+      <div class="arrow-div">
+        <img src="/assets/arrow-transparent.svg" alt="arrow" />
+        <button style="color: transparent;" class="design-button-transparent"></button>
+
+      </div>
+
+    </div>
+    <div class="arrow-button-container">
+      <a href="/screens/home/home.html" style="text-decoration: none;">
+        <div class="arrow-div right">
+          <button class="design-button delete-number">English</button>
+          <img style="transform: scaleX(-1);" src="/assets/basil_arrow_withdraw.svg" alt="arrow" />
+        </div>
+      </a>
+      <a href="/screens/home/home.html" style="text-decoration: none;">
+        <div class="arrow-div right">
+          <button class="design-button delete-all" style="font-family: Cairo;">العربية</button>
+          <img style="transform: scaleX(-1);" src="/assets/basil_arrow_withdraw.svg" alt="arrow" />
+        </div>
+      </a>
+
+      <a href="/screens/home/home.html" style="text-decoration: none;">
+        <div class="arrow-div right">
+          <button class="design-button currency-converter" style="font-family: Cairo;">كوردى</button>
+          <img style=" transform: scaleX(-1);" src="/assets/basil_arrow_withdraw.svg" alt="arrow" />
+        </div>
+      </a>
+
+
+    </div>
+
+  </section>
+
+
+</body>
+<script>
+  let fontSizeMultiplier = 1;
+
+  function adjustTextSize(direction) {
+    fontSizeMultiplier += direction;
+    document.body.style.fontSize = `${1 + 0.2 * fontSizeMultiplier}em`;
+  }
+
+  function increaseTextSize() {
+    document.body.style.fontSize = "1.6em";
+  }
+
+  function decreaseTextSize() {
+    document.body.style.fontSize = "1em";
+  }
+</script>
+
+</html>
+</doctype>

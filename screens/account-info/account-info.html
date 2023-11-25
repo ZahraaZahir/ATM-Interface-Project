@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Account Information Page</title>
+  <link rel="stylesheet" href="./account-info.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <p id="corner">ZSH Bank</p>
+    </div>
+  </header>
+  <div class="parent">
+    <div class="text-container">
+      <h2 id="header">Account Information</h2>
+      <h1 id="person">Hello, Berzy :D</h1>
+    </div>
+    <section class="main">
+      <div class="arrow-button-container">
+        <div class="arrow-div">
+          <img src="/assets/basil_arrow_withdraw.svg" alt="arrow" />
+          <button class="design-button delete-number" onclick="contactBankFunction()">
+            Contact Bank
+          </button>
+        </div>
+
+        <div class="arrow-div">
+          <img src="/assets/basil_arrow_withdraw.svg" alt="arrow" />
+          <button class="design-button delete-all" onclick="moveToPinPage()">
+            Change PIN
+          </button>
+        </div>
+
+        <div class="arrow-div">
+          <img src="/assets/basil_arrow_withdraw.svg" alt="arrow" />
+          <button class="design-button currency-converter" onclick="moveToWelcomePage()">
+            Log Out
+          </button>
+        </div>
+
+        <div class="arrow-div">
+          <img src="/assets/basil_arrow_withdraw.svg" alt="arrow" />
+          <button class="design-button return" onclick="moveToHomePage()">
+            Return
+          </button>
+        </div>
+      </div>
+
+      <div class="info-container">
+        <div class="double">
+          <div class="client-input">
+            <p>Name</p>
+          </div>
+          <div class="rectangle-container">
+            <div class="client-info">Berzy Behzad</div>
+            <input type="text" class="rectangle" />
+          </div>
+        </div>
+        <div class="double">
+          <div class="client-input">
+            <p>Phone Number</p>
+          </div>
+          <div class="rectangle-container">
+            <div class="client-info">+7825592486</div>
+            <input type="text" class="rectangle" />
+          </div>
+        </div>
+        <div class="double">
+          <div class="client-input">
+            <p>Balance</p>
+          </div>
+          <div class="rectangle-container">
+            <div class="client-info">$6200.20</div>
+            <input type="text" class="rectangle" />
+          </div>
+        </div>
+
+        <div class="overlay" id="overlay"></div>
+        <div class="modal" id="modal">
+          <h1>Calling now...</h1>
+        </div>
+      </div>
+    </section>
+    <script src="./account-info.js"></script>
+  </div>
+</body>
+
+</html>

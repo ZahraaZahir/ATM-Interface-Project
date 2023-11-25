@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Withdraw in USD</title>
+  <link rel="stylesheet" href="./withdraw.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet" />
+
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <p id="corner">ZSH Bank</p>
+    </div>
+  </header>
+  <div class="parent">
+    <div class="text-container">
+      <h2 id="balance">Withdraw Amount in USD</h2>
+      <h1 id="USD">Balance: $6300.20</h1>
+    </div>
+    <section class="main">
+      <div class="arrow-button-container">
+        <div class="arrow-div">
+          <img src="/assets/basil_arrow_withdraw.svg" alt="arrow" />
+          <button class="design-button delete-number" onclick="deleteDigit()">
+            Delete Number
+          </button>
+        </div>
+
+        <div class="arrow-div">
+          <img src="/assets/basil_arrow_withdraw.svg" alt="arrow" />
+          <button class="design-button delete-all" onclick="clearRectangleField()">
+            Delete All Numbers
+          </button>
+        </div>
+
+        <div class="arrow-div">
+          <img src="/assets/basil_arrow_withdraw.svg" alt="arrow" />
+          <button class="design-button currency-converter" onclick="convertCurrency()">
+            Currency Converter
+          </button>
+        </div>
+
+        <div class="arrow-div">
+          <img src="/assets/basil_arrow_withdraw.svg" alt="arrow" />
+          <button class="design-button return" onclick="moveToHomePage()">
+            Return
+          </button>
+        </div>
+      </div>
+
+      <div class="calc-container">
+        <div class="rectangle-container">
+          <div class="dollar">$</div>
+          <input type="text" class="rectangle" maxlength="10" />
+        </div>
+        <div class="circle-container">
+          <div class="input-row">
+            <button class="circle-button" onclick="addDigit(1)">1</button>
+            <button class="circle-button" onclick="addDigit(2)">2</button>
+            <button class="circle-button" onclick="addDigit(3)">3</button>
+          </div>
+          <div class="input-row">
+            <button class="circle-button" onclick="addDigit(4)">4</button>
+            <button class="circle-button" onclick="addDigit(5)">5</button>
+            <button class="circle-button" onclick="addDigit(6)">6</button>
+          </div>
+          <div class="input-row">
+            <button class="circle-button" onclick="addDigit(7)">7</button>
+            <button class="circle-button" onclick="addDigit(8)">8</button>
+            <button class="circle-button" onclick="addDigit(9)">9</button>
+          </div>
+          <div class="input-row">
+            <button class="circle-button currency-button" onclick="convertCurrency()">
+              <img src="/assets/currency-conventer.svg" alt="" />
+            </button>
+            <button class="circle-button" onclick="addDigit(0)">0</button>
+            <button class="circle-button delete-button" onclick="deleteDigit()">
+              <img src="/assets/basil_arrow.svg" alt="" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="/screens/withdraw/withdraw.js"></script>
+  </div>
+</body>
+
+</html>
