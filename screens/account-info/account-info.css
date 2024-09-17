@@ -182,7 +182,7 @@ section.main {
 .rectangle-container input {
   width: 100%;
   display: flex;
-  background: #fff;
+  background: #f3f4ed;
   height: 1.5em;
   border-radius: 12px;
   justify-content: center;
