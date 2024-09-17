@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>User PIN Page</title>
+  <link rel="stylesheet" href="pin.css" />
+</head>
+
+<body>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet" />
+  <header>
+    <div class="logo">
+      <p id="corner">ZSH Bank</p>
+    </div>
+  </header>
+  <section class="main">
+    <div class="container">
+      <div class="text-container">
+        <h1 id="enterPin">Please enter your PIN</h1>
+        <h2 id="PIN">(Personal Identification Number)</h2>
+      </div>
+      <div class="square-container">
+        <!-- Change text to password -->
+        <input type="password" class="square" maxlength="1" readonly />
+        <input type="password" class="square" maxlength="1" readonly />
+        <input type="password" class="square" maxlength="1" readonly />
+        <input type="password" class="square" maxlength="1" readonly />
+      </div>
+      <div class="circle-container">
+        <div class="input-row">
+          <button class="circle-button" onclick="handleNumberClick(1)">
+            1
+          </button>
+          <button class="circle-button" onclick="handleNumberClick(2)">
+            2
+          </button>
+          <button class="circle-button" onclick="handleNumberClick(3)">
+            3
+          </button>
+        </div>
+        <div class="input-row">
+          <button class="circle-button" onclick="handleNumberClick(4)">
+            4
+          </button>
+          <button class="circle-button" onclick="handleNumberClick(5)">
+            5
+          </button>
+          <button class="circle-button" onclick="handleNumberClick(6)">
+            6
+          </button>
+        </div>
+        <div class="input-row">
+          <button class="circle-button" onclick="handleNumberClick(7)">
+            7
+          </button>
+          <button class="circle-button" onclick="handleNumberClick(8)">
+            8
+          </button>
+          <button class="circle-button" onclick="handleNumberClick(9)">
+            9
+          </button>
+        </div>
+        <div class="input-row">
+          <button class="circle-button clear-button" onclick="clearPIN()">
+            <img src="/assets/Clear.svg" alt="">
+
+          </button>
+          <button class="circle-button" onclick="handleNumberClick(0)">
+            0
+          </button>
+          <button class="circle-button delete-button" onclick="deleteActiveDigit()">
+            <img src="/assets/basil_arrow.svg" alt="" />
+          </button>
+        </div>
+        <div class="submit-container">
+          <button class="submit-button" onclick="submitPIN()">Submit</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="pin.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,263 @@
+.p3 {
+    color: #26577C;
+    font-family: Raleway;
+    font-size: 2em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    float: right;
+    margin-right: 18%;
+}
+
+
+
+.p2 {
+    color: #26577C;
+    font-family: Raleway;
+    font-size: 2em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    float: left;
+    margin-left: 23%;
+
+}
+
+
+
+body {
+    background: #f3f4ed;
+    margin: 0;
+    padding: 0;
+    font-family: raleway;
+}
+
+header {
+    width: 100%;
+    margin: 0.5em;
+}
+
+.logo {
+    width: 100%;
+    margin: 0.5em;
+}
+
+.logo #corner {
+    width: 100%;
+    color: #e65703;
+    margin: 0.2em auto;
+    font-family: Raleway;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: end;
+}
+
+.parent {
+    width: 100%;
+    height: 100%;
+    margin: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* border: 1px solid red; */
+}
+
+.text-container {
+    width: 98%;
+    margin: 0.5em;
+    /* border: 1px solid red; */
+}
+
+.text-container #USD {
+    width: 98%;
+    margin: 0.5em auto;
+    color: #26577c;
+    font-style: normal;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+
+}
+
+.text-container #balance {
+    width: 98%;
+    margin: 0.5em auto;
+    color: #26577c;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
+}
+
+section.main {
+    width: 98%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin: 0.5em;
+    /* border: 1px solid red; */
+}
+
+.main .arrow-button-container,
+.main .calc-container {
+    margin: 1em;
+    width: 80%;
+    /* border: 1px solid red; */
+}
+
+.main .calc-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    padding: 1em;
+    /* border: 1px solid red; */
+}
+
+.arrow-button-container {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0.5em;
+    /* border: 1px solid red; */
+}
+
+.arrow-div {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.3em 0;
+    /* border: 1px solid red; */
+}
+
+
+.arrow-div img {
+    width: 13.5%;
+    /* background-color: black; */
+    color: #e65703;
+    /* border: 1px solid red;    */
+
+}
+
+.arrow-button-container .design-button {
+    width: 76%;
+    height: 2.8em;
+    border-radius: 0.5em;
+    font-size: 1.6em;
+    background-color: #26577c;
+    font-family: raleway;
+    color: #fff;
+    border: none;
+    outline: none;
+    /* border: 1px solid red; */
+}
+
+.arrow-button-container .design-button-transparent {
+    width: 76%;
+    height: 2.8em;
+    border-radius: 0.5em;
+    font-size: 1.6em;
+    background-color: #26577c00;
+    font-family: raleway;
+    color: #fff;
+    border: none;
+    outline: none;
+    /* border: 1px solid red; */
+}
+
+.rectangle-container {
+    width: 70%;
+    height: 80px;
+    margin-bottom: 0.5em;
+    padding: 0.5em;
+    border-radius: 16px;
+    border: 2px solid #e65703;
+    background: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.rectangle-container input {
+    width: 100%;
+    /* Make sure the input takes up the entire width of the .rectangle */
+    /* Remove input outline */
+    display: flex;
+    justify-content: center;
+    border: none;
+    outline: none;
+}
+
+.dollar {
+    color: #26577c;
+    font-family: Raleway;
+    font-size: 2.5em;
+    font-weight: 700;
+    padding: 0.5em;
+}
+
+.circle-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 0.5em;
+    padding: 0.5em;
+    width: 100%;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+
+.circle-container .input-row {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 60%;
+    margin-bottom: 0.2em;
+    /* border: 1px solid red; */
+}
+
+.circle-container .input-row .circle-button {
+    width: 2em;
+    height: 2em;
+    border: 2px solid;
+    border-radius: 50%;
+    text-align: center;
+    margin: 0.1em 0.3em;
+    font-size: 48px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
+    background: #26577c;
+    cursor: pointer;
+    color: #fff;
+}
+
+/*Style for the clear and delete button */
+.circle-container .input-row .circle-button.delete-button,
+.circle-container .input-row .circle-button.clear-button {
+    background: #e65703;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-container #whatDoYouWantToDO {
+    width: 95%;
+    margin: 0.5em auto;
+    color: #26577c;
+    font-style: normal;
+    font-size: 48px;
+    font-weight: bold;
+    line-height: normal;
+    text-align: center;
+}
